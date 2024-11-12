@@ -1,0 +1,8 @@
+<!-- app/views/book_ui_renderer/book_ui/_show.html.erb -->
+<div class="book-ui">
+  <%= render partial: "book_ui_renderer/book_ui/toc", locals: { chapters: @chapters } %>
+
+  <% @chapters.each do |chapter| %>
+    <%= render partial: "book_ui_renderer/book_ui/chapter", locals: { chapter: chapter } %>
+  <% end %>
+</div>

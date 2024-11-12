@@ -1,0 +1,11 @@
+<!-- app/views/book_ui_renderer/book_ui/_toc.html.erb -->
+<div class="book-toc">
+  <h2>Table of Contents</h2>
+  <ul>
+    <% chapters.each_with_index do |chapter, index| %>
+      <li>
+        <a href="#" onclick="showChapter(<%= index %>)"><%= chapter.title %></a>
+      </li>
+    <% end %>
+  </ul>
+</div>
